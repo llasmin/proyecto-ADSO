@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/index.js" defer></script>
+    <title>Servisoft - Misión y Visión</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <div class="icon">
+          <h2 class="logo">
+            <a href="index.html">ServiSoft</a>
+          </h2>
+        </div>
+        <!-- menu toggle button for mobile -->
+        <div class="menu-toggle" id="menu-toggle">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <!-- menu -->
+        <div class="menu" id="menu">
+          <ul>
+            <li><a href="mision-vision.html">MISION - VISION</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            <li><a href="login.html">SALIR</a></li>
+          </ul>
+        </div>
+      </div>
+      <main>
+        <section>
+          <h2>Misión y Visión</h2>
+          <p>
+            <strong>Misión:</strong> Nuestra misión es proporcionar productos y
+            servicios de alta calidad que mejoren la vida de nuestros clientes.
+            Nos esforzamos por ser una compañía responsable y sostenible,
+            comprometida con la innovación y la excelencia operativa.
+          </p>
+          <p>
+            <strong>Visión:</strong> Nuestra visión es ser líderes en nuestro
+            sector, reconocidos por nuestra capacidad de adaptación y
+            crecimiento en un mundo en constante cambio. Aspiramos a crear un
+            futuro mejor y más sostenible para nuestras comunidades y el
+            planeta.
+          </p>
+        </section>
+      </main>
+    </div>
+    <script>
+      window.addEventListener("load", function () {
+        const user = localStorage.getItem("user");
+        if (!user) location.href = "login.html";
+      });
+    </script>
+  </body>
+</html>

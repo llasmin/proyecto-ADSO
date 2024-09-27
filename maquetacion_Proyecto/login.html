@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/index.js" defer></script>
+    <title>Servisoft - Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img src="images/login.png" alt="Login" />
+      </div>
+      <div class="login-container">
+        <div id="error" style="color:red; display: none;">
+          <ul>
+            <li>Usuario o contraseña incorrectos, verifique por favor</li>
+          </ul>
+        </div>
+        <h2>Login</h2>
+        <form action="#" method="post">
+          <div class="input-group">
+            <label for="username">Usuario</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="input-group">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button id="submit" type="button">Ingresar</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", function () {
+        localStorage.clear();
+      });
+    </script>
+  </body>
+</html>

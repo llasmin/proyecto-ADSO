@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/index.js" defer></script>
+    <title>Servisoft - Catálogo</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <div class="icon">
+          <h2 class="logo">
+            <a href="index.html">ServiSoft</a>
+          </h2>
+        </div>
+        <!-- menu toggle button for mobile -->
+        <div class="menu-toggle" id="menu-toggle">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <!-- menu -->
+        <div class="menu" id="menu">
+          <ul>
+            <li><a href="mision-vision.html">MISION - VISION</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            <li><a href="login.html">SALIR</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="catalog">
+        <h1>Catálogo</h1>
+        <div class="items">
+          <div class="item">
+            <img src="images/cuadernos.jpg" alt="Cuaderno 100 hojas" />
+            <h2>Cuaderno 100 hojas</h2>
+            <p>$2.500</p>
+          </div>
+          <div class="item">
+            <img src="images/lapices.jpeg" alt="Lápiz" />
+            <h2>Lápiz</h2>
+            <p>$1.000</p>
+          </div>
+          <div class="item">
+            <img src="images/borrador.png" alt="Borrador" />
+            <h2>Borrador</h2>
+            <p>$700</p>
+          </div>
+          <div class="item">
+            <img src="images/colores.jpg" alt="Caja colores" />
+            <h2>Caja colores</h2>
+            <p>$10.000</p>
+          </div>
+          <div class="item">
+            <img src="images/plastilina.jpg" alt="Plastilina" />
+            <h2>Plastilina</h2>
+            <p>$6.500</p>
+          </div>
+          <div class="item">
+            <img src="images/temperas.jpg" alt="Temperas" />
+            <h2>Temperas</h2>
+            <p>$15.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", function () {
+        const user = localStorage.getItem("user");
+        if (!user) location.href = "login.html";
+      });
+    </script>
+  </body>
+</html>

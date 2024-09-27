@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/index.js" defer></script>
+    <title>Servisoft - Index</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <div class="icon">
+          <h2 class="logo">
+            <a href="index.html">ServiSoft</a>
+          </h2>
+        </div>
+        <!-- menu toggle button for mobile -->
+        <div class="menu-toggle" id="menu-toggle">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <!-- menu -->
+        <div class="menu" id="menu">
+          <ul>
+            <li><a href="mision-vision.html">MISION - VISION</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            <li><a href="login.html">SALIR</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <img src="images/index.png" alt="index" />
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", function () {
+        const user = localStorage.getItem("user");
+        if (!user)
+          location.href = "login.html";
+      });
+    </script>
+  </body>
+</html>
